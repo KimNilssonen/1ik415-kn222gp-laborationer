@@ -22,26 +22,26 @@
                 <ul>
                     <li>
                         <label>Matter:</label>
-                            <select>
-                                <option value="Question">Question</option>
-                                <option value="Häst">Häst</option>
+                            <select name ="Matter">
+                                <option value="Question" name="OptionQuestion">Question</option>
+                                <option value="Häst" name="OptionHäst">Häst</option>
                             </select> 
                     </li>
                     <li>
                         <label>Title:</label> 
-                            <input type="text" id="title" value=""/>
+                            <input type="Title"  name="Title" id="title"/>
                     </li>
                     <li>
                         <label>Question:</label> 
-                            <textarea id="question" cols="30" rows="4"></textarea>
+                            <textarea id="question" name="Question" cols="30" rows="4"></textarea>
                     </li>
             </ul>
         </fieldset>
         
         <fieldset>
              <legend>Information</legend>
-                 <p>Contact by mail <input type="checkbox" value="no"></p>
-                 <p>Contact by phone <input type="checkbox" value="no"></p>
+                 <p>Contact by mail <input type="checkbox" name ="Contact-type" value="Mail"></p>
+                 <p>Contact by phone <input type="checkbox" name ="Contact-type" value="Phone"></p>
         </fieldset>
         
         <input type="submit" value="Submit"/>
