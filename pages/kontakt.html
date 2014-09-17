@@ -5,6 +5,8 @@
         <title>Contact - Kim</title>
     </head>
     <body>
+        <h1>Contact</h1>
+        
         <strong>Meny</strong>
         <ul>
             <li><a href="../index.html">Start</a></li>
@@ -13,7 +15,39 @@
             <li><a href="kontakt.html">Contact</a></li>
         </ul>
     
-        <h2>Contact</h2>
+        <a id="contactForm"><p>Keep in mind! This is a test form!</p></a>
+        <form action="http://voyager.lnu.se/tekinet/kurser/dtt/wp_webbintro/form.php" method="post">
+        <fieldset>
+            <ul>
+                <legend>Type of Contact</legend>
+                    <li>
+                        <label>Matter:</label>
+                            <select>
+                                <option value="Question">Question</option>
+                                <option value="Häst">Häst</option>
+                            </select> 
+                    </li>
+                    <li>
+                        <label>Title:</label> 
+                            <input type="text" id="title" value=""/>
+                    </li>
+                    <li>
+                        <label>Question:</label> 
+                            <textarea id="question" cols="30" rows="4"></textarea>
+                    </li>
+            </ul>
+        </fieldset>
+        
+        <fieldset>
+             <legend>Information</legend>
+                 <p>Contact by mail <input type="checkbox" value="no"></p>
+                 <p>Contact by phone <input type="checkbox" value="no"></p>
+        </fieldset>
+        
+        <input type="submit" value="Submit"/>
+        
+        </form>
+        
         
     </body>
 </html>
