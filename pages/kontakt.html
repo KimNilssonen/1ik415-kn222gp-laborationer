@@ -7,6 +7,7 @@
     <body>
         <h1>Contact</h1>
         
+        
         <strong>Meny</strong>
         <ul>
             <li><a href="../index.html">Start</a></li>
@@ -17,34 +18,34 @@
     
         <a id="contactForm"><p>Keep in mind! This is a test form!</p></a>
         <form action="http://voyager.lnu.se/tekinet/kurser/dtt/wp_webbintro/form.php" method="post">
-        <fieldset>
-            <legend>Type of Contact</legend>
-                <ul>
-                    <li>
-                        <label>Matter:</label>
-                            <select name ="Matter">
-                                <option value="Question" name="OptionQuestion">Question</option>
-                                <option value="Häst" name="OptionHäst">Häst</option>
-                            </select> 
-                    </li>
-                    <li>
-                        <label>Title:</label> 
-                            <input type="Title"  name="Title" id="title"/>
-                    </li>
-                    <li>
-                        <label>Question:</label> 
-                            <textarea id="question" name="Question" cols="30" rows="4"></textarea>
-                    </li>
-            </ul>
-        </fieldset>
+            <fieldset>
+                <legend>Type of Contact</legend>
+                    <ul>
+                        <li>
+                            <label>Matter:</label>
+                                <select name ="Matter">
+                                    <option value="Question">Question</option>
+                                    <option value="Häst">Häst</option>
+                                </select> 
+                        </li>
+                        <li>
+                            <label>Title:</label> 
+                                <input type="text"  name="Title" id="title"/>
+                        </li>
+                        <li>
+                            <label>Question:</label> 
+                                <textarea id="question" name="Question" cols="30" rows="4"></textarea>
+                        </li>
+                    </ul>
+            </fieldset>
         
-        <fieldset>
-             <legend>Information</legend>
-                 <p>Contact by mail <input type="checkbox" name ="Contact-type" value="Mail"></p>
-                 <p>Contact by phone <input type="checkbox" name ="Contact-type" value="Phone"></p>
-        </fieldset>
+            <fieldset>
+                <legend>Information</legend>
+                    <p>Contact by mail <input type="radio" name ="Contact-type" value="Mail"></p>
+                    <p>Contact by phone <input type="radio" name ="Contact-type" value="Phone"></p>
+            </fieldset>
         
-        <input type="submit" value="Submit"/>
+            <input type="submit" value="Submit"/>
         
         </form>
         
