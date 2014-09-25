@@ -1,14 +1,15 @@
 body { background-color: #C19A6B; }
         
-#header { border-radius: 5px;
+#header { border-radius: 5px; /* Rounds the corners by x pixels. */
             background-color: #99C0E0;
             text-align: center;
-            padding: 5px; }
+            padding: 5px; } /* Clears the area around your content by x pixels. */
+            
 #footer { border-radius: 5px;
             margin-top: 5px;
             text-align: center;
             background-color: #99C0E0;
-            position: relative;
+            
             padding: 5px; }
 
 #logo { margin-top: 25px;
@@ -18,16 +19,17 @@ body { background-color: #C19A6B; }
 #container
         { border-radius: 5px;
             background-color: #C19A69;
-            background: linear-gradient( to right, #C19A69, #FFE2C9, #FFE2C9
-                                            , #FFE2C9, #FFE2C9, #FFE2C9, #FFE2C9, #FFE2C9);
+            background: linear-gradient( to right, #C19A69, #FFE2C9, #FFE2C9, 
+                                                #FFE2C9, #FFE2C9, #FFE2C9, #FFE2C9, #C19A69);
 
-            width: 900px;
+            width: 800px;
             margin-left: auto;
             margin-right: auto; }
 
 #content { border-radius: 5px;
-            background-color: #FFE2C9;
-            margin-top: 5px;
+            background: linear-gradient( to left, #C19A69, #FFE2C9, #FFE2C9, 
+                                                #FFE2C9, #FFE2C9, #FFE2C9, #FFE2C9);
+            margin-top:5px;
             margin-left: 137px;
             padding: 5px; }
 
@@ -50,6 +52,14 @@ body { background-color: #C19A6B; }
 #video { width: 400px;
             height: 300px;
             margin-left: 130px; }
+            
+    
+table, td, th { border: 2px solid black; }
+
+table { background-color: #99C0E0; }
+
+td { background-color: #FFE2C9;
+        text-align: center; }
             
         
 .Button { color: black;
