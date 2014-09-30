@@ -4,6 +4,8 @@
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <title>Contact - Kim</title>
         <link rel="stylesheet" href="../css/style.css"/>
+        <link rel="stylesheet" href="../css/print.css" media="print"/>
+        
     </head>
     <body>
     <div id="container">
@@ -25,25 +27,29 @@
         <div id="content">
             <h2>Contact form</h2>
             <a id="contactForm"><p>Keep in mind! This is a test form!</p></a>
+            
+            <div id="form">
             <form action="http://voyager.lnu.se/tekinet/kurser/dtt/wp_webbintro/form.php" method="post">
                 <fieldset>
                     <legend>Type of Contact</legend>
                         <ul>
                             <li>
                                 <label>Matter:</label>
+                            </li>
                                     <select name ="Matter">
                                         <option value="Question">Question</option>
                                         <option value="Häst">Häst</option>
                                     </select> 
-                            </li>
+                            
                             <li>
                                 <label>Title:</label> 
+                            </li>
                                     <input type="text"  name="Title" id="title"/>
-                            </li>
+                            
                             <li>
-                                <label>Question:</label> 
-                                    <textarea id="question" name="Question" cols="30" rows="4"></textarea>
+                                <label>Question:</label>
                             </li>
+                                    <textarea id="question" name="Question" cols="30" rows="4"></textarea>
                         </ul>
                 </fieldset>
             
@@ -58,6 +64,7 @@
                 <input type="submit" value="Submit"/>
             
             </form>
+            </div>
         </div>
         
         <footer>
