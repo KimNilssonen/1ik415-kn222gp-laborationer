@@ -14,6 +14,7 @@ body { background-color: #C19A6B; }
 
 #logo { margin-top: 25px;
             float: left;
+            position:absolute;
             padding: 5px; }
 
 #container
@@ -41,12 +42,45 @@ body { background-color: #C19A6B; }
             text-align:center;
             text-decoration:underline;
             height: auto;
-            float: left; }
+            float: left; 
+        }
         
-    #menu { border-radius: 5px;
-               text-align: center;
+    #menu   { border-radius: 5px;
+               text-align: left;
                list-style-type: none; 
-               padding: 2px; }
+               padding: 2px; 
+            }
+            
+        #nav a {background-image: url("pics/sprite.png");
+                background-repeat:no-repeat;
+                text-indent:30px;
+                }
+                
+                
+#nav li .active1 { background-position: 0px 8px;
+                color: black;
+                background-color: #FFE2C9;
+                text-decoration: none;
+                border-bottom:1px solid white; }
+        
+    #nav li .active2 {background-position: 0px -183px;
+                    color: black;
+                    background-color: #FFE2C9;
+                    text-decoration: none;
+                    border-bottom:1px solid white; }
+                    
+         #nav li .active3 {background-position: 0px  -87px;
+                        color: black;
+                        background-color: #FFE2C9;
+                        text-decoration: none;
+                        border-bottom:1px solid white; }   
+                    
+             #nav li .active4 {background-position: 0px -282px;
+                            color: black;
+                            background-color: #FFE2C9;
+                            text-decoration: none;
+                            border-bottom:1px solid white; }        
+           
            
 #video { width: 100%;
             width: 320px; }
@@ -60,16 +94,15 @@ body { background-color: #C19A6B; }
             
 #form, input, textarea, select{ 
         width: 300px;
-        border-radius: 5px;
+        border-radius: 10px;
         margin-bottom:10px;
         padding: 5px;
      }
 
- textarea { max-width: 400px; }
-
-    input radio { width:50px; }  /* Fråga om radioknapparna och submit! Dom blir konstiga... */
+ textarea { max-width: 300px; }
     
-        fieldset { border: 4px solid #C19A6B;
+        fieldset { width: 350px;
+                    border: 4px solid #C19A6B;
                     border-radius: 5px; }
                 
             fieldset li {list-style-type: none; }
@@ -79,8 +112,18 @@ body { background-color: #C19A6B; }
                             font-family: Arial; 
                             font-weight: bold; }
     
-                    label { font-family: Arial; }
-
+                    radio1 label { font-family: Arial; width:100px; }
+                    radio2 label { font-family: Arial; width:100px; }
+                    
+                        input[type='radio'] {width:20px;
+                                            float:right;
+                                            margin-right:200px;
+                                            margin-bottom:-8px;
+                        }
+                        
+                        input[type='submit'] {width:150px;}
+                        
+                            
 
 
 
@@ -95,36 +138,79 @@ table, td, th { border: 2px solid black; }
         
 .Button { color: black;
             border-radius: 5px;
-            box-shadow: inset 0 1px 1px rgba(255,255,255,0.5);
+            box-shadow: inset 0 5px 2px rgba(255,255,255,0.6);
             font-family: Arial, sans-serif;
             display: inline-block;
             line-height: 2.5em;
             text-decoration: none; 
             border-bottom:none;
             margin-top: 4px;
-            width: 133px; }
+            width: 133px;
+        }
         
     .Colored.Button { color: black;
-                        background: Linear-gradient( #FFE2C9, white);
+                        background: Linear-gradient(white, #FFE2C9, white);
                         text-decoration: none; 
-                        border-bottom:none; }
+                        border-bottom:1px solid white;
+                    }
         
-        .Button:hover { color: black;
-                         background: Linear-gradient( white, #99C0E0, #99C0E0);
-                         text-decoration: none;
-                         border-bottom:none; }
         
             .Active.Button { color: black;
                                background: Linear-gradient( white, #99C0E0, #99C0E0);
                                text-decoration: none;
-                               border-bottom:none; }
+                               border-bottom:1px solid white;
+                            }
+
+            /* För sprites */
+
+
+/* .Sprite span {display:none;} */
+
+/* Index */
+#spriteIcon { background-position:0px -40px;}
+#spriteIcon:hover {background-position: 0px 8px;
+                    color: black;
+                    background-color: #FFE2C9;
+                    text-decoration: none;
+                    border-bottom:1px solid white;
+                    }
+                    
+
+/* Presentation */
+#spriteIcon2 { background-position:0px -231px;}
+#spriteIcon2:hover {background-position: 0px -183px;
+                    color: black;
+                    background-color: #FFE2C9;
+                    text-decoration: none;
+                    border-bottom:1px solid white; 
+                    }
+                    
+/* Laborationer */
+#spriteIcon3 { background-position:0px -135px;}
+#spriteIcon3:hover {background-position: 0px -87px;
+                    color: black;
+                    background-color: #FFE2C9;
+                    text-decoration: none;
+                    border-bottom:1px solid white; 
+                    }
+                    
+/* Kontakt */        
+#spriteIcon4 { background-position:0px -330px;}
+#spriteIcon4:hover {background-position: 0px -282px;
+                    color: black;
+                    background-color: #FFE2C9;
+                    text-decoration: none;
+                    border-bottom:1px solid white;
+                    }
+
+
 
 
 .RightClass { float: right;
                 padding: 5px; }
         
     .LeftClass { float: left;
-                    padding: 5px; }
+                    padding: 0px; }
 
         .CenterClass {  margin-left:auto;
                         margin-right: auto;
@@ -135,7 +221,9 @@ table, td, th { border: 2px solid black; }
 strong { font-size: 15px; }
         
     p   { color: black;
-            font-family: Arial;}
+            font-family: Arial;
+            text-align:left;
+        }
 
         h1, h2, h3, h4  { font-family: Arial; }
         
@@ -157,3 +245,4 @@ ul  { font-family: Arial;
     ol  {font-family: Arial; }
         
         dl  { font-family: Arial;}
+         

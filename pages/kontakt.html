@@ -17,13 +17,13 @@
         <div id="nav">
             <h3>Menu</h3>
             <ul id="menu">
-                <li><a href="../index.html" class="Colored Button">Start</a></li>
-                    <li><a href="presentation.html" class="Colored Button">Presentation</a></li>
-                    <li><a href="laborationer.html" class="Colored Button">Laborations</a></li>
-                    <li><a href="kontakt.html" class="Active Colored Button">Contact</a></li>
+                <li><a href="../index.html" id="spriteIcon" class="Colored Button">Start</a></li>
+                    <li><a href="presentation.html" id="spriteIcon2" class="Colored Button">Presentation</a></li>
+                    <li><a href="laborationer.html" id="spriteIcon3" class="Colored Button">Laborations</a></li>
+                    <li><a href="kontakt.html" id="spriteIcon4" class="active4 Colored Button">Contact</a></li>
             </ul>
         </div>
-    
+        
         <div id="content">
             <h2>Contact form</h2>
             <a id="contactForm"><p>Keep in mind! This is a test form!</p></a>
@@ -32,34 +32,45 @@
             <form action="http://voyager.lnu.se/tekinet/kurser/dtt/wp_webbintro/form.php" method="post">
                 <fieldset>
                     <legend>Type of Contact</legend>
-                        <ul>
-                            <li>
-                                <label>Matter:</label>
-                            </li>
-                                    <select name ="Matter">
-                                        <option value="Question">Question</option>
-                                        <option value="Häst">Häst</option>
-                                    </select> 
+                        
+                        
+                        <label>Matter:</label>
+                            <div id="option">
+                                <select name ="Matter">
+                                    <option value="Question">Question</option>
+                                    <option value="Häst">Häst</option>
+                                </select> 
+                            </div>    
                             
-                            <li>
-                                <label>Title:</label> 
-                            </li>
-                                    <input type="text"  name="Title" id="title"/>
                             
-                            <li>
-                                <label>Question:</label>
-                            </li>
-                                    <textarea id="question" name="Question" cols="30" rows="4"></textarea>
-                        </ul>
+                        <label>Title:</label> 
+                            <div id="title">
+                                <input type="text"  name="Title" id="title"/>
+                            </div>
+                        
+                        <label>Question:</label>
+                            <div id="question">
+                                <textarea name="Question" cols="30" rows="4"></textarea>
+                            </div>
                 </fieldset>
             
                 <fieldset>
                     <legend>Information</legend>
-                        <ul>
-                            <li>Contact by mail <input type="radio" name ="Contact-type" value="Mail"></li>
-                            <li>Contact by phone <input type="radio" name ="Contact-type" value="Phone"></li>
-                        </ul>
-                </fieldset>
+                    
+                     <div id="radio1">
+                            <label>Contact by phone
+                                <input type="radio" name ="Contact-type" value="Phone">
+                            </label>
+                        </div> 
+                    
+                    
+                        <div id="radio2">
+                            <label>Contact by mail
+                                    <input type="radio" name ="Contact-type" value="Mail">
+                            </label>
+                        </div>
+
+                    </fieldset>
             
                 <input type="submit" value="Submit"/>
             
@@ -69,7 +80,7 @@
         
         <footer>
             <div id="footer">
-                <p><strong>Ansvarig för denna sida: Kim Nilsson, UD14</strong></p>
+                <p>Ansvarig för denna sida: Kim Nilsson, UD14</p>
             </div>
         </footer>
         
