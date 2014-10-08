@@ -161,10 +161,7 @@ table, td, th { border: 2px solid black; }
                                border-bottom:1px solid white;
                             }
 
-            /* För sprites */
-
-
-/* .Sprite span {display:none;} */
+/* För sprites */
 
 /* Index */
 #spriteIcon { background-position:0px -40px;}
