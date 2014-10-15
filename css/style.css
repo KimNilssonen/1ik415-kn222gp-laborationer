@@ -1,3 +1,85 @@
+/* HTML5 tags for index.html. Assignment 5.1 */
+
+        
+header { border-radius: 5px; /* Rounds the corners by x pixels. */
+            background-color: #99C0E0;
+            text-align: center;
+            padding: 5px; } /* Clears the area around your content by x pixels. */
+            
+footer { border-radius: 5px;
+            margin-top: 5px;
+            text-align: center;
+            background-color: #99C0E0;
+            padding: 5px;
+            clear: both;}
+            
+        footer p { text-align:center; 
+                    font-size: 11px; }
+                    
+                    
+nav    { border-radius: 5px;
+            margin-top: 5px;
+            background-color: #99C0E0;
+            line-height: 20px;
+            text-align:center;
+            text-decoration:underline;
+            height: auto;
+            float: left; 
+        }
+        
+
+            
+        nav a {background-image: url("pics/sprite.png");
+                background-repeat:no-repeat;
+                text-indent:30px;
+                }
+                            
+nav li .active1 { background-position: 0px 8px;
+                color: black;
+                background-color: #FFE2C9;
+                text-decoration: none;
+                border-bottom:1px solid white; }
+        
+    nav li .active2 {background-position: 0px -183px;
+                    color: black;
+                    background-color: #FFE2C9;
+                    text-decoration: none;
+                    border-bottom:1px solid white; }
+                    
+         nav li .active3 {background-position: 0px  -87px;
+                        color: black;
+                        background-color: #FFE2C9;
+                        text-decoration: none;
+                        border-bottom:1px solid white; }   
+                    
+             nav li .active4 {background-position: 0px -282px;
+                            color: black;
+                            background-color: #FFE2C9;
+                            text-decoration: none;
+                            border-bottom:1px solid white; }
+                            
+main
+    { border-radius: 5px;
+        background-color: #C19A69;
+        background: linear-gradient( to right, #C19A69, #FFE2C9, #FFE2C9, 
+                                            #FFE2C9, #FFE2C9, #FFE2C9, #FFE2C9, #C19A69);
+        
+        width: 900px;
+        margin-left: auto;
+        margin-right: auto; }
+        
+    section { border-radius: 5px;
+                background: transparent;
+                margin-top:5px;
+                float: left;
+                width: 100%;
+                width: 743px;
+                padding: 5px;}
+            
+           /* Slut på HTML5 taggarna */
+
+
+
 body { background-color: #C19A6B; }
         
 #header { border-radius: 5px; /* Rounds the corners by x pixels. */
@@ -82,7 +164,7 @@ body { background-color: #C19A6B; }
                             color: black;
                             background-color: #FFE2C9;
                             text-decoration: none;
-                            border-bottom:1px solid white; }        
+                            border-bottom:1px solid white; }  
            
            
 #video { width: 100%;
