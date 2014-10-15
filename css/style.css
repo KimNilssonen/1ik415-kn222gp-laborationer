@@ -1,4 +1,4 @@
-/* HTML5 tags for index.html. Assignment 5.1 */
+/*------ HTML5 tags for index.html. Assignment 5.1------- */
 
         
 header { border-radius: 5px; /* Rounds the corners by x pixels. */
@@ -24,15 +24,12 @@ nav    { border-radius: 5px;
             text-align:center;
             text-decoration:underline;
             height: auto;
-            float: left; 
-        }
+            float: left; }
         
-
             
         nav a {background-image: url("pics/sprite.png");
                 background-repeat:no-repeat;
-                text-indent:30px;
-                }
+                text-indent:30px;}
                             
 nav li .active1 { background-position: 0px 8px;
                 color: black;
@@ -76,7 +73,7 @@ main
                 width: 743px;
                 padding: 5px;}
             
-           /* Slut på HTML5 taggarna */
+/*----- Slut på HTML5 taggarna -------------------*/
 
 
 
