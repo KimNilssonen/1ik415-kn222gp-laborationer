@@ -180,13 +180,15 @@ body { background-color: #C19A6B; }
         
         #cat { width: 200px; }   
            
-   
+
+#form { float:left; }   
             
 #form, input, textarea, select{ 
         width: 300px;
         border-radius: 10px;
         margin-bottom:10px;
         padding: 5px;
+        
      }
 
  textarea { max-width: 300px; }
@@ -195,7 +197,6 @@ body { background-color: #C19A6B; }
                     border: 4px solid #C19A6B;
                     border-radius: 5px; }
                 
-            fieldset li {list-style-type: none; }
     
                 legend { border-left: 1px solid #C19A6B;
                             border-right: 1px solid #C19A6B;
@@ -334,5 +335,8 @@ ul  { font-family: Arial;
         
 .vcard { border: 1px dashed black;
             padding: 5px;
-            float:right; }
+            float:right; 
+            margin-right: 10%; 
+            margin-top: 50%;
+}
          

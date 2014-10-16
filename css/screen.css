@@ -7,18 +7,18 @@ body
     max-width: 480px;
 }
 
-#container
+main
 {
     width: 97%;
     max-width: 480px;
 }
 
-#header
+header
 {
     width: 96%;
 }
 
-#footer
+footer
 {
     font-size:9px;
 }
@@ -28,7 +28,7 @@ body
     margin-top: 100px;
 }
 
-#content
+section
 {
     width: 97%;
 
