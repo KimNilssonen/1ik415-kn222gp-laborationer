@@ -72,6 +72,12 @@ main
                 width: 100%;
                 width: 743px;
                 padding: 5px;}
+                
+article dl { border:1px dashed black; 
+                width:65%; }
+    article dl p {font-weight:bold; }
+        article dt { font-size: 15; }
+            article dd {font-size:13px; }
             
 /*----- Slut på HTML5 taggarna -------------------*/
 
