@@ -74,10 +74,12 @@ main
                 padding: 5px;}
                 
 article dl { border:1px dashed black; 
-                width:65%; }
+                width:65%; 
+                padding:5px;}
     article dl p {font-weight:bold; }
         article dt { font-size: 15; }
             article dd {font-size:13px; }
+            
             
 /*----- Slut på HTML5 taggarna -------------------*/
 
@@ -329,4 +331,8 @@ ul  { font-family: Arial;
     ol  {font-family: Arial; }
         
         dl  { font-family: Arial;}
+        
+.vcard { border: 1px dashed black;
+            padding: 5px;
+            float:right; }
          
